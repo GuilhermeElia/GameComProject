@@ -2568,6 +2568,20 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+.btn-icon{
+
+}
+
+.btn-icon-outline {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-icon-outline:hover {
+  color: rgb(85, 11, 81);
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
 .form-range {
   width: 100%;
   height: 1.5rem;
