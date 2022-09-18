@@ -3,9 +3,9 @@ import { NgForm } from '@angular/forms';
 import {Router} from "@angular/router"
 
 @Component({
-  selector: 'app-cadastro-usuario',
-  templateUrl: './cadastro-usuario.component.html',
-  styleUrls: ['./cadastro-usuario.component.css',
+  selector: 'app-login-usuario',
+  templateUrl: './login-usuario.component.html',
+  styleUrls: ['./login-usuario.component.css',
               './css/main.css',
               './css/util.css',
               './fonts/font-awesome-4.7.0/css/font-awesome.min.css',
@@ -15,7 +15,7 @@ import {Router} from "@angular/router"
               './vendor/select2/select2.min.css',
             ]
 })
-export class CadastroUsuarioComponent implements OnInit {
+export class LoginUsuarioComponent implements OnInit {
 
   constructor(private router: Router) { }
 
