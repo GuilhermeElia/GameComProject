@@ -1,4 +1,9 @@
-<nav class="bg-header navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg"
+    [class.navbar-dark]="modoDarkOrLight"
+    [class.bg-light]="!modoDarkOrLight"
+    [class.navbar-light]="!modoDarkOrLight"
+    [class.bg-dark]="modoDarkOrLight"
+    >
     <div class="container px-4 px-lg-5">
         <a class=" navbar-brand" ><img src="assets/GameCom.png" alt="" style=" width:auto; height: 50px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -16,17 +21,26 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <button class="btn btn-outline-light" type="submit">
+                <button class="btn" type="submit"
+                        [class.btn-outline-light]="modoDarkOrLight"
+                        [class.btn-outline-dark]="!modoDarkOrLight">
                     <i class="bi-cart-fill me-1"></i>
 
                     <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                 </button>
-                <button class="btn btn-outline-light">
-                    <i class="bi bi-toggle-off"></i>
-
+                <button class="btn" type="button" 
+                [ngClass]="{
+                    'btn-outline-light': modoDarkOrLight,
+                    'btn-outline-dark': !modoDarkOrLight
+                }"
+                (click)="toogle()">
+                    <i class="bi"
+                    [ngClass]="{
+                            'bi-sun-fill': modoDarkOrLight,
+                            'bi-moon-fill': !modoDarkOrLight
+                    }"></i>
                 </button>
             </form>
         </div>
     </div>
 </nav>
-
