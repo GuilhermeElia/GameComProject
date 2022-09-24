@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
+import { InicioListaJogosComponent } from './inicio-lista-jogos/inicio-lista-jogos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
     NavbarComponent,
     CadastroComponent,
     InicioComponent,
-    LoginUsuarioComponent
+    LoginUsuarioComponent,
+    InicioListaJogosComponent
   ],
   imports: [
     BrowserModule,
