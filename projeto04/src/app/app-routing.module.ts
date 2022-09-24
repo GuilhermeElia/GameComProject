@@ -4,11 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { JogoDetalheComponent } from './jogo-detalhe/jogo-detalhe.component';
 
 const routes: Routes = [
   { path: '', component: LoginUsuarioComponent },
   { path: 'home', component: InicioComponent },
   { path: 'cadastro', component: CadastroComponent },
+  { path: 'jogo-detalhe/:id', component: JogoDetalheComponent },
+
+  { path: '**', component: LoginUsuarioComponent }, // Rota Page not Found, Adicionar rotas acima dessa
 ];
 
 @NgModule({

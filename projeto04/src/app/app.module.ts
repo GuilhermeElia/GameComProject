@@ -9,6 +9,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { InicioListaJogosComponent } from './inicio-lista-jogos/inicio-lista-jogos.component';
+import { JogoDetalheComponent } from './jogo-detalhe/jogo-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InicioListaJogosComponent } from './inicio-lista-jogos/inicio-lista-jog
     CadastroComponent,
     InicioComponent,
     LoginUsuarioComponent,
-    InicioListaJogosComponent
+    InicioListaJogosComponent,
+    JogoDetalheComponent
   ],
   imports: [
     BrowserModule,

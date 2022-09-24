@@ -6,3 +6,8 @@ export interface IJogo {
   diretorioImagem: string,
   vendido: boolean,
 }
+
+export interface IJogoDetalhe extends IJogo {
+  descricao: string,
+  urlVideoDemonstracao: string,
+}
