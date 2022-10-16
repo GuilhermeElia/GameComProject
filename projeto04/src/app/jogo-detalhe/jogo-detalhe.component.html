@@ -8,10 +8,14 @@
 <!-- Section-->
 <section class="py-5">
   <div class="container bg-dark text-light sm" style="height: 400px;">
-    Nome : {{jogoDetalhe.nome}}
-    {{jogoDetalhe.descricao}}
+    <div>
+      Nome : {{jogoDetalhe.nome}}
+      {{jogoDetalhe.descricao}}
+    </div>
+  
+    <div class="videoJogo" >
+      <iframe class="video" [src]="getUrlSafe(jogoDetalhe.urlVideoDemonstracao)" allowfullscreen></iframe>
+    </div>
   </div>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" [src]="getUrlSafe(jogoDetalhe.urlVideoDemonstracao)" allowfullscreen></iframe>
-  </div>
+  
 </section>

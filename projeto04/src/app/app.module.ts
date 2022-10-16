@@ -10,6 +10,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { InicioListaJogosComponent } from './inicio-lista-jogos/inicio-lista-jogos.component';
 import { JogoDetalheComponent } from './jogo-detalhe/jogo-detalhe.component';
+import { JogosCRUDComponent } from './jogos-crud/jogos-crud.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { JogoDetalheComponent } from './jogo-detalhe/jogo-detalhe.component';
     InicioComponent,
     LoginUsuarioComponent,
     InicioListaJogosComponent,
-    JogoDetalheComponent
+    JogoDetalheComponent,
+    JogosCRUDComponent
   ],
   imports: [
     BrowserModule,

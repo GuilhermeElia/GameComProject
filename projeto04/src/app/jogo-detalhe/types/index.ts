@@ -4,7 +4,7 @@ export interface IJogo {
   preco: number,
   estrelas: number,
   diretorioImagem: string,
-  vendido: boolean,
+  desconto: number,
 }
 
 export interface IJogoDetalhe extends IJogo {

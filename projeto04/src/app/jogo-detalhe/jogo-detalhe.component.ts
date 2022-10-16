@@ -28,7 +28,7 @@ export class JogoDetalheComponent implements OnInit {
     preco: 0,
     estrelas: 0,
     diretorioImagem: '',
-    vendido: false,
+    desconto: 0,
     descricao: '',
     urlVideoDemonstracao: ''
   }
