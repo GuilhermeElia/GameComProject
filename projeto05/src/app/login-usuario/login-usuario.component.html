@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bem-vindo a gameCom</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="login">
+    <h1>GAME.COM</h1>
+    <form class="login" #userlogin="ngForm" class="login100-form validate-form" (ngSubmit)="onSubmit(userlogin)" novalidate>
+      <input type="text" ngModel required #first="ngModel" name="login" placeholder="Login">
+      <input type="password" ngModel name="pass" placeholder="Password">
+      <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
+    </form>
+    <div *ngIf="loginError" class="alert alert-danger" role="alert">
+      Login ou senha incorretos
+    </div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
