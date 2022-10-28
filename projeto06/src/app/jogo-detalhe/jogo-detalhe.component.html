@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<!-- Carrossel-->
+<header>
+  <div class="bg-image">
+    <img class="bg-image" [src]="jogoDetalhe.diretorioImagem" alt="">
+  </div>
+</header>
+<!-- Section-->
+<section class="py-5">
+  <div class="container bg-dark text-light sm" style="height: 400px;">
+    <div>
+      Nome : {{jogoDetalhe.nome}}
+      {{jogoDetalhe.descricao}}
+    </div>
+
+    <div class="videoJogo" >
+      <iframe class="video" [src]="getUrlSafe()" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-danger" (click)="excluir()">Excluir</button>
+</div>
