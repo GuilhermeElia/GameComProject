@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bem-vindo a gameCom</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="login">
+    <h1>GAME.COM</h1>
+    <form [formGroup]="formCliente">
+      <input type="text" formControlName="nome" name="nome" placeholder="Login">
+      <input type="password" formControlName="senha" name="senha" placeholder="Password">
+      <button type="button" (click)="onSubmit()" class="btn btn-primary btn-block btn-large">Entrar</button>
+    </form>
+    <div *ngIf="loginError" class="alert alert-danger" role="alert">
+      Login ou senha incorretos
+    </div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

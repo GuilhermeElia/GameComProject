@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+
+
+
+<div class="container row justify-content-center">
+  <form class="col-9">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="jogo.nome">
+    </div>
+
+    <div class="mb-3">
+        <label for="preco" class="form-label">Preço</label>
+        <input type="number" min="1" class="form-control" id="preco" name="preco" [(ngModel)]="jogo.preco">
+    </div>
+
+    <div class="mb-3">
+        <label for="estrelas" class="form-label">Estrelas</label>
+        <input type="number" value=1 min="1" max="5" class="form-control" id="estrelas" name="estrelas" [(ngModel)]="jogo.estrelas">
+    </div>
+
+    <div class="mb-3">
+        <label for="desconto" class="form-label">Desconto</label>
+        <input type="number" min="1" max="100" class="form-control"  id="desconto" name="desconto" [(ngModel)]="jogo.desconto">
+    </div>
+
+    <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição</label>
+        <textarea class="form-control"  id="descricao" name="descricao" [(ngModel)]="jogo.descricao"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="urlVideoDemonstracao" class="form-label">Url Video</label>
+        <input type="text" class="form-control"  id="urlVideoDemonstracao" name="urlVideoDemonstracao" [(ngModel)]="jogo.urlVideoDemonstracao">
+    </div>
+
+    <div class="row">
+        <div class="d-grid gap-2 col-6">
+            <button [routerLink]="['/todos-os-jogos']" type="button" class="btn btn-secondary">Cancelar</button>
+        </div>
+
+        <div class="d-grid gap-2 col-6">
+            <button (click)="cadastrar()" type="button" class="btn btn-success">Salvar</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+
+
+
